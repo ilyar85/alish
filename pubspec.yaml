@@ -41,7 +41,21 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets:
+    - assets/logo.png
+    - assets/home.png
+    - assets/statistics.png
+    - assets/account.png
+    - assets/home_inactive.png
+    - assets/statistics_inactive.png
+    - assets/account_inactive.png
+    - assets/back.png
+    - assets/done.png
+    - assets/eye.png
+  fonts:
+    - family: GothamPro
+      fonts:
+        - asset: assets/fonts/K_GothamPro-Black.otf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
