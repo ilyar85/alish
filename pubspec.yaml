@@ -19,6 +19,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_countdown_timer: ^4.1.0
+  percent_indicator: ^4.2.3
 
 dev_dependencies:
   flutter_test:
@@ -52,15 +54,20 @@ flutter:
     - assets/back.png
     - assets/done.png
     - assets/eye.png
-  fonts:
-    - family: GothamPro
-      fonts:
-        - asset: assets/fonts/K_GothamPro-Black.otf
+   
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
-
+  fonts:
+    - family: GothamPro
+      fonts:
+        - asset: assets/fonts/K_GothamPro-Black.otf
+          weight: 900
+        - asset: assets/fonts/K_GothamPro-Medium.otf
+          weight: 500
+        - asset: assets/fonts/K_GothamPro-Regular.otf
+          weight: 400   
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
