@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'learning_screen.dart';
 import 'stats_screen.dart';
+import 'account_screen.dart';
 
 void main() {
   runApp(DailyWordsApp());
@@ -67,7 +68,7 @@ class _MainScreenState extends State<MainScreen> {
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     StatsScreen(),
-    Text('Account Page', style: TextStyle(color: Colors.white)),
+    AccountScreen(),
   ];
 
   void _onItemTapped(int index) {

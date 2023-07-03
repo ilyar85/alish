@@ -20,7 +20,7 @@ class _StatsScreenState extends State<StatsScreen> {
         child: Column(
           children: [
             _buildStatCard(screenHeight * 0.3),
-            _buildPlanCard(screenHeight * 0.1),
+            _buildPlanCard(screenHeight * 0.2),
             Row(
               children: [
                 Expanded(child: _buildErrorCard(screenHeight * 0.4)),
