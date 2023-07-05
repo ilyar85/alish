@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'dart:async';
 import 'learning_screen.dart';
 import 'stats_screen.dart';
@@ -34,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   startTimer() async {
-    var _duration = Duration(seconds: 3);
+    var _duration = Duration(seconds: 4);
     return Timer(_duration, navigateToNextPage);
   }
 
@@ -49,9 +50,11 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.black,
       body: Center(
         child: FractionallySizedBox(
-          widthFactor: 0.5,
-          heightFactor: 0.5,
-          child: Image.asset('assets/logo.png', fit: BoxFit.contain),
+          //widthFactor: 0.5,
+          //heightFactor: 0.5,
+          child: Lottie.asset('assets/animations/DW_logo.json',
+              animate: true, repeat: false),
+          //child: Image.asset('assets/logo.png', fit: BoxFit.contain),
         ),
       ),
     );
